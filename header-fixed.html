@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студіа</title>
+    <link rel="stylesheet" href="./css/normaliz.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;500;700;900&display=swap"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" > -->
+  </head>
+  <body>
+    <!--шапка сайта-->
+    <header class="page-header">
+      <nav class="container main-nav">
+        <a href="./index.html" class="logo"
+          ><span class="logo-web">Web</span> Studio</a
+        >
+        <ul class="site-nav list">
+          <li class="nav-item">
+            <a href="./header-fixed.html" class="nav-link current">Студиа</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="nav-link">Портфолио</a>
+            <ul class="portfolio-submenu">
+              <li class="submenu-item-1">
+                <a class="submenu-link" href="">Все</a>
+                <ul class="submenu-all">
+                  <li class="all-item">
+                    <a class="all-link" href="">Веб-сайты</a>
+                  </li>
+                  <li class="all-item">
+                    <a class="all-link" href="">Приложения</a>
+                  </li>
+                  <li class="all-item">
+                    <a class="all-link" href="">Дизайн</a>
+                  </li>
+                  <li class="all-item">
+                    <a class="all-link" href="">Маркетинг</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Веб-сайты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Приложения</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Дизайн</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Маркетинг</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="/" class="nav-link">Контакты</a></li>
+        </ul>
+        <address class="address-nav">
+          <ul class="address-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="icon" width="16" height="11.2">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="icon" width="10" height="14.94">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </nav>
+    </header>
+    <main>
+      <!--hero-->
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">
+            эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <a href="./popup.html" class="button-hero">Заказать услугу</a>
+        </div>
+      </section>
+      <!--блок особенности компании-->
+      <section class="container section">
+        <h2 class="section-title hidden">особенности компании</h2>
+        <ul class="feature-list list">
+          <li class="item">
+            <div class="feature-icon">
+              <svg class="icon-antenna">
+                <use href="./images/sprite.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Внимание к деталям</h3>
+            <p class="features-description">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="item">
+            <div class="feature-icon">
+              <svg class="icon-clock">
+                <use href="./images/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Пунктуальность</h3>
+            <p class="features-description">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="item">
+            <div class="feature-icon">
+              <svg class="icon-diagram">
+                <use href="./images/sprite.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Планирование</h3>
+            <p class="features-description">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="item">
+            <div class="feature-icon">
+              <svg class="icon-astronaut">
+                <use href="./images/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Современные технологии</h3>
+            <p class="features-description">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="container-portfolio">
+        <!--блок фильтр-->
+        <div>
+          <ul class="list filter block">
+            <li class="item">
+              <button class="button portfolio-filter" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-filter" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-filter" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-filter" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="item">
+              <button class="button portfolio-filter" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!--блок портфолио-->
+        <section>
+          <h1 class="hidden">Портфолио фирмы</h1>
+          <ul class="project list">
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/tehnocrak.jpg"
+                    alt="Технокряк"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Технокряк</h2>
+                <p class="project-category">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Poster-Golden-Star.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                <p class="project-category">Дизайн</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/restaurant-Seafood.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Ресторан Seafood</h2>
+                <p class="project-category">Приложение</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Project-Prime.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Проект Prime</h2>
+                <p class="project-category">Маркетинг</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Project-Boxes.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Проект Boxes</h2>
+                <p class="project-category">Маркетинг</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Inspiration-has-no-Borders.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Inspiration has no Borders</h2>
+                <p class="project-category">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Edition-Limited-Edition.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Издание Limited Edition</h2>
+                <p class="project-category">Дизайн</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Project-LAB.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Проект LAB</h2>
+                <p class="project-category">Маркетинг</p>
+              </a>
+            </li>
+            <li class="item">
+              <a href="/" class="link project-card">
+                <div class="card-behind">
+                  <img
+                    src="./images/portfolio/Growing-Business.jpg"
+                    alt="Growing Business"
+                    width="370"
+                  />
+                  <p class="description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="project-title">Growing Business</h2>
+                <p class="project-category">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+// ! оформление кнопок
+// TODO: basic button styles
+%button {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $primary-white;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  font-family: inherit;
+  transform: scale(1);
+  transition: transform $timing-animation;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+.hero__button {
+  @extend %button;
+}
+.popup__button {
+  @extend %button;
+}
+// TODO: кнопка подписки на россылку
+.subscribe__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %button;
+  padding: 10px 29px;
+  & .icon {
+    margin-left: 10px;
+  }
+}
+
+.button__portfolio--filter {
+  color: $title-color;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: color $timing-animation, background-color $timing-animation,
+    box-shadow $timing-animation;
+  &:hover,
+  &:focus {
+    color: $primary-white;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}

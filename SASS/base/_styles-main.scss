@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background: $primary-white;
+  color: $text-color;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// TODO: style title (h)
+%h {
+  margin: 0;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+h1 {
+  @extend %h;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $primary-white;
+}
+h2 {
+  @extend %h;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+}
+h3 {
+  @extend %h;
+  line-height: 1.14;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

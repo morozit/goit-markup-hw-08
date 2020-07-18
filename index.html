@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студіа</title>
+    <link rel="stylesheet" href="./css/normaliz.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;500;700;900&display=swap"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" > -->
+  </head>
+  <body>
+    <!--шапка сайта-->
+    <header class="header__container">
+      <nav class="header__main-nav">
+        <a href="./index.html" class="logo"
+          >Web&nbsp;<span class="logo__studio-black"> Studio</span></a
+        >
+        <!-- TODO: nav site -->
+        <ul class="header__site-nav">
+          <li class="header__site-item">
+            <a href="./" class="header__site-link current">Студиа</a>
+          </li>
+          <li class="header__site-item">
+            <a href="./portfolio.html" class="header__site-link">Портфолио</a>
+          </li>
+          <li class="header__site-item">
+            <a href="/header-fixed.html" class="header__site-link">Контакты</a>
+          </li>
+        </ul>
+        <!-- TODO: nav address -->
+        <address class="header__address">
+          <ul class="header__address-nav">
+            <li class="header__address-item">
+              <a href="mailto:info@devstudio.com" class="header__address-link">
+                <svg class="header__icon" width="16" height="11.2">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__address-item">
+              <a href="tel:+380961111111" class="header__address-link">
+                <svg class="header__icon" width="10" height="14.94">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </nav>
+    </header>
+    <main>
+      <!--hero-->
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">
+            эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <button class="hero__button" data-open-modal>Заказать услугу</button>
+        </div>
+      </section>
+      <!--блок особенности компании-->
+      <section class="feature__container">
+        <h2 class="hidden">особенности компании</h2>
+        <ul class="feature__list">
+          <li class="feature__item">
+            <div class="feature__icon">
+              <svg class="feature__icon--antenna">
+                <use href="./images/sprite.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Внимание к деталям</h3>
+            <p class="features__description">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__icon">
+              <svg class="feature__icon--clock">
+                <use href="./images/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Пунктуальность</h3>
+            <p class="features__description">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__icon">
+              <svg class="feature__icon--diagram">
+                <use href="./images/sprite.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Планирование</h3>
+            <p class="features__description">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__icon">
+              <svg class="feature__icon--astronaut">
+                <use href="./images/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features__title">Современные технологии</h3>
+            <p class="features__description">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!--блок чем занимаетса компания-->
+      <section class="produce__container">
+        <h2 class="produce__title">Чем мы занимаемся</h2>
+        <ul class="produce__list">
+          <li class="produce__item">
+            <div class="produce__position">
+              <img
+                class="produce__position--img"
+                src="./images/what-we-do/box1.jpg"
+                alt="Десктопные приложения"
+                width="370"
+              />
+              <h3 class="produce__title--h3">Десктопные приложения</h3>
+            </div>
+          </li>
+          <li class="produce__item">
+            <div class="produce__position">
+              <img
+                class="produce__position--img"
+                src="./images/what-we-do/box2.jpg"
+                alt="Мобильные приложения"
+                width="370"
+              />
+              <h3 class="produce__title--h3">Мобильные приложения</h3>
+            </div>
+          </li>
+          <li class="produce__item">
+            <div class="produce__position">
+              <img
+                class="produce__position--img"
+                src="./images/what-we-do/box3.jpg"
+                alt="Дизайнерские решения"
+                width="370"
+              />
+              <h3 class="produce__title--h3">Дизайнерские решения</h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!--блок Наша команда-->
+      <div class="team__background">
+        <section class="team__container">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <!--первый член команды-->
+            <li class="team__item">
+              <img
+                src="./images/our-team/komanda1.jpg"
+                alt="John Smith"
+                width="270"
+              />
+              <h3 class="team__title--h3">Николай Кучеренко</h3>
+              <p class="team__description">Product Designer</p>
+              <!--блок команды social icon-->
+              <div class="social-team__container">
+                <ul class="social__lists">
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--второй член команды-->
+            <li class="team__item">
+              <img
+                src="./images/our-team/komanda2.jpg"
+                alt="Marta Stewart"
+                width="270"
+              />
+              <h3 class="team__title--h3">Ольга Иванова</h3>
+              <p class="team__description">Frontend Developer</p>
+              <!--блок команды social icon-->
+              <div class="social-team__container">
+                <ul class="social__lists">
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--третий член команды-->
+            <li class="team__item">
+              <img
+                src="./images/our-team/komanda3.jpg"
+                alt="Robert Jakis"
+                width="270"
+              />
+              <h3 class="team__title--h3">Андрей Шевченко</h3>
+              <p class="team__description">Marketing</p>
+              <!--блок команды social icon-->
+              <div class="social-team__container">
+                <ul class="social__lists">
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--четвертый член команды-->
+            <li class="team__item">
+              <img
+                src="./images/our-team/komanda4.jpg"
+                alt="MMartin Doe"
+                width="270"
+              />
+              <h3 class="team__title--h3">Иван Николаев</h3>
+              <p class="team__description">UI Designer</p>
+              <!--блок команды social icon-->
+              <div class="social-team__container">
+                <ul class="social__lists">
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href="https://www.instagram.com/atom_travel/"
+                      class="team__social--link"
+                    >
+                      <svg class="social__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!--блок постоянные клиенты-->
+      <section class="client__container">
+        <h2 class="client__title">Постоянные клиенты</h2>
+        <ul class="client__list">
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="44.27" height="49.23">
+                <use href="./images/sprite.svg#logo1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="40" height="52">
+                <use href="./images/sprite.svg#logo2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="41" height="42.6">
+                <use href="./images/sprite.svg#logo3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="79.66" height="42.02">
+                <use href="./images/sprite.svg#logo4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="59" height="47">
+                <use href="./images/sprite.svg#logo5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="client__item">
+            <a href="/" class="client__logo">
+              <svg class="client-icon" width="88.48" height="45.44">
+                <use href="./images/sprite.svg#logo6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__block1">
+          <a href="./index.html" class="logo"
+            >Web&nbsp;<span class="logo__studio-white"> Studio</span></a
+          >
+          <address class="footer__address">
+            <ul>
+              <li class="footer__item footer__description">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="footer__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="tel:+380961111111" class="footer__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social-footer__container">
+          <b>присоединяйтесь</b>
+          <ul class="social__lists">
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/atom_travel/"
+                class="footer__social--link"
+              >
+                <svg class="social__icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/atom_travel/"
+                class="footer__social--link"
+              >
+                <svg class="social__icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/atom_travel/"
+                class="footer__social--link"
+              >
+                <svg class="social__icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/atom_travel/"
+                class="footer__social--link"
+              >
+                <svg class="social__icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="subscribe">
+          <b>Подпишитесь на рассылку</b>
+          <div class="subscribe__forma">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+            />
+            <button class="subscribe__button">
+              Подписаться
+              <svg class="icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- popup ЗАКАЗАТЬ -->
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="popup">
+        <button class="close-popup" data-close-modal>
+          <svg class="icon-close" height="18px" width="18px">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <!--  -->
+        <!--  -->
+        <form>
+          <b>Оставьте свои данные, мы вам перезвоним</b>
+          <label class="form-label">
+            <input type="text" name="name" placeholder=" " class="form-field" />
+            <span class="label-name">Имя</span>
+            <svg class="input-icon" height="12px" width="12px">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            <input
+              type="tel"
+              name="telephone"
+              placeholder=" "
+              class="form-field"
+            />
+            <span class="label-name">Телефон</span>
+            <svg class="input-icon" height="13px" width="13px">
+              <use href="./images/sprite.svg#tel-popup"></use>
+            </svg>
+          </label>
+          <label class="form-label">
+            <input
+              type="email"
+              name="mail"
+              placeholder=" "
+              class="form-field"
+            />
+            <span class="label-name">Почта</span>
+            <svg class="input-icon" height="12px" width="15px">
+              <use href="./images/sprite.svg#mail-popup"></use>
+            </svg>
+          </label>
+          <!--  -->
+          <!--  -->
+          <div class="comment-label">
+            <textarea
+              class="comment-field"
+              name="comment"
+              rows="6"
+              placeholder=" "
+            ></textarea>
+            <span class="comment-name">Комментарий</span>
+          </div>
+          <!--  -->
+          <label class="checkbox-label">
+            <input
+              class="checkbox invisible"
+              type="checkbox"
+              name="agreement"
+            />
+            <span class="checkbox-icon"></span>
+            <span class="check-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a></span
+            >
+          </label>
+          <!--  -->
+          <button type="submit" class="popup__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

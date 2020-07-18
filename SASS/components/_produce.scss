@@ -1,0 +1,37 @@
+.produce {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+    padding: 0;
+  }
+  &__position {
+    position: relative;
+  }
+  &__position--img {
+    display: block;
+  }
+  &__title--h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}

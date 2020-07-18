@@ -1,0 +1,42 @@
+.feature {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  // !
+  &__item {
+    display: block;
+    width: calc((100% - 90px) / 4);
+    margin-top: 30px;
+  }
+  // !
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    &--antenna,
+    &--clock,
+    &--diagram,
+    &--astronaut {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-weight: 400;
+    width: 270px;
+  }
+}

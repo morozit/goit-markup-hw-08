@@ -1,0 +1,68 @@
+.footer {
+  background-color: #2f303a;
+  color: $primary-white;
+  font-size: 14px;
+  line-height: 1.14;
+  & b {
+    display: flex;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__block1 {
+    display: block;
+  }
+  &__address {
+    font-style: normal;
+    margin-top: 20px;
+  }
+  &__item:not(:last-child) {
+    padding-bottom: 9px;
+  }
+  &__description {
+    color: $primary-white;
+    font-weight: 300;
+    line-height: 1.71;
+  }
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: none;
+    transition: color $timing-animation;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    transform: scaleX(1);
+    outline: transparent;
+  }
+}
+
+.subscribe {
+  padding-top: 12px;
+  &__forma {
+    display: flex;
+  }
+  &__input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2f303a;
+    &:focus,
+    &:not(:placeholder-shown) {
+      outline: transparent;
+      border: 1px solid $primary-white;
+    }
+  }
+}

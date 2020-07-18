@@ -1,0 +1,86 @@
+// TODO: блок портфолио карточки
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  // TODO: позиціювання карточок проектів в 3 колонки
+  &__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &__item {
+    display: block;
+    width: calc((100% - 60px) / 3);
+    margin-top: 30px;
+    border: 1px solid #eeeeee;
+    border-radius: 0px 0px 4px 4px;
+    transition: box-shadow $timing-animation;
+  }
+  // TODO: картка портфоліо
+  &__card {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    padding-bottom: 20px;
+    background-color: $primary-white;
+  }
+  &__card-behind {
+    position: relative;
+    overflow: hidden;
+  }
+  &__card-img {
+    display: block;
+  }
+  &__card-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.8);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $primary-white;
+    margin: 0px;
+    padding: 63px 24px;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform $timing-animation, opacity $timing-animation;
+  }
+  &__card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-color;
+    padding-top: 24px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  &__card-category {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    padding-right: 20px;
+    color: $text-color;
+  }
+  // TODO: hover & focus to project card
+  &__item:hover &__card-description,
+  &__item:focus &__card-description {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,7 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

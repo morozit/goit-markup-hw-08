@@ -1,0 +1,48 @@
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__container {
+  @extend %container;
+}
+.hero__container {
+  @extend %container;
+  display: block;
+  padding: 200px 15px;
+  text-align: center;
+}
+.feature__container {
+  @extend %container;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.produce__container {
+  @extend %container;
+  padding-bottom: 94px;
+}
+.team__container {
+  @extend %container;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client__container {
+  @extend %container;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.footer__container {
+  @extend %container;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio__container {
+  @extend %container;
+  padding-top: 93px;
+  padding-bottom: 94px;
+}

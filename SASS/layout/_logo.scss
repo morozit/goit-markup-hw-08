@@ -1,0 +1,23 @@
+// ! Logo
+.logo {
+  display: flex;
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform $timing-animation;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    outline: transparent;
+  }
+  &__studio-black {
+    color: #000000;
+  }
+  &__studio-white {
+    color: #ffffff;
+  }
+}
