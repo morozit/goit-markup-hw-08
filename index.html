@@ -52,6 +52,18 @@
             </li>
           </ul>
         </address>
+        <button class="menu__button" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40">
+            <use
+              class="menu__button--close"
+              href="./images/sprite.svg#icon-menu_close"
+            ></use>
+            <use
+              class="menu__button--open"
+              href="./images/sprite.svg#icon-menu_open"
+            ></use>
+          </svg>
+        </button>
       </nav>
     </header>
     <main>
@@ -511,7 +523,7 @@
         <!--  -->
         <div class="subscribe">
           <b>Подпишитесь на рассылку</b>
-          <div class="subscribe__forma">
+          <div class="subscribe__forma js-speaker-form">
             <input
               class="subscribe__input"
               type="email"

@@ -31,25 +31,30 @@ ul {
   letter-spacing: 0.03em;
   color: $title-color;
 }
-h1 {
-  @extend %h;
-  font-size: 44px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $primary-white;
-}
-h2 {
-  @extend %h;
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
-}
-h3 {
-  @extend %h;
-  line-height: 1.14;
-}
+// h1 {
+//   @extend %h;
+//   font-size: 44px;
+//   letter-spacing: 0.06em;
+//   text-align: center;
+//   color: $primary-white;
+// }
+// h2 {
+//   @extend %h;
+//   text-align: center;
+//   font-size: 36px;
+//   line-height: 1.16;
+// }
+// h3 {
+//   @extend %h;
+//   line-height: 1.14;
+// }
 
 p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

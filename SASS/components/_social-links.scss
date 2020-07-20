@@ -3,14 +3,19 @@
   padding-right: 32px;
 }
 .social-footer__container {
-  margin-left: 69px;
-  margin-right: 94px;
+  // margin-left: 69px;
+  // margin-right: 94px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin: 60px 0;
   padding-top: 12px;
   text-transform: uppercase;
 }
 
 .social__lists {
   display: flex;
+  justify-content: center;
 }
 .social__item:not(:last-child) {
   margin-right: 10px;

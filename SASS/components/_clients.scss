@@ -4,9 +4,23 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
+  // &__item:not(:last-child) {
+  // margin-right: 30px;
+  // }
+  // &__item {
+  //   display: block;
+  //   width: calc((100% - 60px) / 2);
+  //   margin-top: 30px;
+  // }
   &__item:not(:last-child) {
     margin-right: 30px;
+  }
+  &__item {
+    display: block;
+    width: calc((100% - 60px) / 2);
+    margin-top: 30px;
   }
   &__logo {
     display: flex;
@@ -17,7 +31,7 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
-    width: 170px;
+    width: 100%;
     height: 90px;
 
     transition: background-color $timing-animation, border $timing-animation,

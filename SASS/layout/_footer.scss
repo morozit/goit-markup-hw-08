@@ -4,7 +4,7 @@
   font-size: 14px;
   line-height: 1.14;
   & b {
-    display: flex;
+    display: block;
     margin-bottom: 20px;
 
     font-style: normal;
@@ -13,9 +13,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  &__block1 {
-    display: block;
-  }
+  // &__block1 {
+  //   // display: block;
+  // }
   &__address {
     font-style: normal;
     margin-top: 20px;
@@ -48,10 +48,13 @@
   padding-top: 12px;
   &__forma {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__input {
-    margin-right: 12px;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
