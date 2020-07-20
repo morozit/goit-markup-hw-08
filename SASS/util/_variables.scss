@@ -8,3 +8,9 @@ $accent-color: #2196f3;
 $timing-animation: 600ms cubic-bezier(0.4, 0, 0.2, 1);
 // ! набор шрифтов
 $font-family: "Roboto", "Raleway", "Lato", "Open Sans", sans-serif;
+// ! breakpoints
+$mobile: 480px;
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1139px;
+$desktop: 1140px;
