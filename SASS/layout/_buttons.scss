@@ -1,7 +1,7 @@
 // ! оформление кнопок
 // TODO: basic button styles
 %button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 32px;
   border: none;
@@ -80,7 +80,7 @@
   &--close {
     display: none;
   }
-  &.is-open &--close {
+  &.is-close &--close {
     display: block;
   }
   &.is-open &--open {

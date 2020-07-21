@@ -3,6 +3,13 @@
   color: $primary-white;
   font-size: 14px;
   line-height: 1.14;
+  &__container {
+    @extend %container;
+    padding: 60px 15px;
+    text-align: center;
+    // display: flex;
+    // justify-content: space-between;
+  }
   & b {
     display: block;
     margin-bottom: 20px;
@@ -14,7 +21,7 @@
     text-transform: uppercase;
   }
   // &__block1 {
-  //   // display: block;
+  // display: block;
   // }
   &__address {
     font-style: normal;

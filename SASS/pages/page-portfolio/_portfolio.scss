@@ -1,20 +1,29 @@
+.portfolio__container {
+  @extend %container;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 // TODO: блок портфолио карточки
 
 .project {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   // TODO: позиціювання карточок проектів в 3 колонки
-  &__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  // &__item:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
-  &__item {
-    display: block;
-    width: calc((100% - 60px) / 3);
-    margin-top: 30px;
-    border: 1px solid #eeeeee;
-    border-radius: 0px 0px 4px 4px;
-    transition: box-shadow $timing-animation;
-  }
+  // &__item {
+  //   display: block;
+  //   width: calc((100% - 60px) / 3);
+  //   margin-top: 30px;
+  //   border: 1px solid #eeeeee;
+  //   border-radius: 0px 0px 4px 4px;
+  //   transition: box-shadow $timing-animation;
+  // }
   // TODO: картка портфоліо
   &__card {
     display: block;
@@ -30,6 +39,7 @@
   }
   &__card-img {
     display: block;
+    width: 450px;
   }
   &__card-description {
     position: absolute;

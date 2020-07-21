@@ -1,11 +1,15 @@
 .feature {
+  &__container {
+    @extend %container;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   // &__list {
   //   display: flex;
   // }
-  &__item:not(:last-child) {
-    // margin-right: 30px;
-    margin-bottom: 30px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   // !
   // &__item {
   //   display: block;
@@ -20,7 +24,7 @@
     background-color: #f5f4fa;
     margin-bottom: 30px;
     height: 120px;
-    width: 270px;
+    width: 100%;
     border-radius: 4px;
     &--antenna,
     &--clock,
@@ -32,12 +36,17 @@
   }
 
   &__title {
+    @extend %h;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px;
   }
   &__description {
     font-weight: 400;
-    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 }
