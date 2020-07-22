@@ -52,8 +52,19 @@
             </li>
           </ul>
         </address>
-        <button class="menu__button" aria-expanded="false" data-menu-button>
-          <svg width="40" height="40">
+        <!-- ! Menu mobile -->
+        <button
+          type="button"
+          class="menu__button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
             <use
               class="menu__button--close"
               href="./images/sprite.svg#icon-menu_close"
@@ -615,5 +626,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/subscribe.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
