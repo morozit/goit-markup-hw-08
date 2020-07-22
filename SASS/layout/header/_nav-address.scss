@@ -1,0 +1,47 @@
+.header {
+  &__address {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__address-nav {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      //     margin-left: auto;
+      //     font-style: normal;
+    }
+  }
+  &__address-item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  %address-link {
+    display: block;
+    padding-bottom: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    color: $text-color;
+    fill: $text-color;
+    transition: color $timing-animation, fill $timing-animation;
+  }
+  &__address-link--mail {
+    @extend %address-link;
+    padding-top: 0px;
+  }
+  &__address-link--mail:hover,
+  &__address-link--mail:focus {
+    color: $accent-color;
+  }
+
+  &__address-link--tel {
+    @extend %address-link;
+  }
+}

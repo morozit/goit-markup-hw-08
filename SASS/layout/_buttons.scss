@@ -69,25 +69,42 @@
   }
 }
 
+// TODO
+// ! Кнопка открытия/закрытия nav-menu
 .menu__button {
-  display: inline-flex;
+  display: flex;
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
   background-color: transparent;
-  fill: $title-color;
-
-  &--close {
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
     display: none;
   }
-  &.is-close &--close {
+  &--icon-cross,
+  &--icon-menu {
+    display: inline-block;
+    margin: auto;
+    fill: $title-color;
+
+    transition: fill $timing-animation;
+  }
+  // ! не працює колір акценту при фокусі на СВГ
+  &:focus,
+  &:focus &--icon-menu,
+  &:focus &--icon-cross {
+    outline: transparent;
+    fill: $accent-color;
+  }
+  &--icon-cross {
+    display: none;
+  }
+
+  &.is-open &--icon-cross {
     display: block;
   }
-  &.is-open &--open {
+
+  &.is-open &--icon-menu {
     display: none;
-  }
-  &:hover,
-  &:focus {
-    fill: $accent-color;
   }
 }
