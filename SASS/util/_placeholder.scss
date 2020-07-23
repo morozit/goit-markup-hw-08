@@ -16,3 +16,10 @@
     width: $desktop;
   }
 }
+%h {
+  margin: 0;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}

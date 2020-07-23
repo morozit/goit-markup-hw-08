@@ -3,18 +3,51 @@
     @extend %container;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
-  // &__list {
-  //   display: flex;
-  // }
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  &__list {
+    @media screen and (min-width: $tablet-min) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  // ! ITEM mobile
+  &__item:not(:last-child) {
+    @media screen and (max-width: $tablet-max) {
+      margin-bottom: 30px;
+    }
+  }
+  // ! ITEM tablet
+  &__item:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet-min) {
+      margin-right: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $tablet-min) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+
+  // ! ITEM desctop
+  &__item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+  }
+
   // !
   // &__item {
   //   display: block;
-  //   width: calc((100% - 90px) / 4);
-  //   margin-top: 30px;
+  //   width: calc((100% - 30px) / 2);
   // }
   // !
   &__icon {
@@ -47,6 +80,5 @@
   &__description {
     font-weight: 400;
     padding-top: 10px;
-    padding-bottom: 30px;
   }
 }

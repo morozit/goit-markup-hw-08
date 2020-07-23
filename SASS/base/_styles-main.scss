@@ -24,26 +24,6 @@ ul {
   list-style: none;
 }
 // TODO: style title (h)
-%h {
-  margin: 0;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
-  color: $title-color;
-}
-// h1 {
-//   @extend %h;
-//   font-size: 44px;
-//   letter-spacing: 0.06em;
-//   text-align: center;
-//   color: $primary-white;
-// }
-// h2 {
-//   @extend %h;
-//   text-align: center;
-//   font-size: 36px;
-//   line-height: 1.16;
-// }
 
 p {
   margin-top: 0px;

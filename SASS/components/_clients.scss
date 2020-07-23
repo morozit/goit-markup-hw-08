@@ -3,32 +3,58 @@
     @extend %container;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   &__title {
     @extend %h;
-    font-size: 28px;
-    line-height: 1, 17;
-
     text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    @media screen and (min-width: $mobile) {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
   }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @media screen and (min-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+    }
   }
+  // ! ITEM mobile
   &__item {
     @media screen and (max-width: $mobile-max) {
       width: calc((100% - 2 * 15px) / 2);
-      // margin-right: 30px;
-      // margin-bottom: 30px;
       &:nth-child(2n + 1) {
         margin-right: 30px;
       }
       &:nth-last-child(n + 3) {
         margin-bottom: 30px;
       }
+    }
+  }
+  // ! ITEM tablet
+  &__item:not(:nth-child(3n)) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+      margin-bottom: 30px;
     }
   }
   &__logo {
