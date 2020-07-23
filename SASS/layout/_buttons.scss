@@ -69,8 +69,7 @@
   }
 }
 
-// TODO
-// ! Кнопка открытия/закрытия nav-menu
+// TODO: Кнопка открытия/закрытия mobile-menu
 .menu__button {
   display: flex;
   margin: 0;
@@ -89,7 +88,6 @@
 
     transition: fill $timing-animation;
   }
-  // ! не працює колір акценту при фокусі на СВГ
   &:focus,
   &:focus &--icon-menu,
   &:focus &--icon-cross {

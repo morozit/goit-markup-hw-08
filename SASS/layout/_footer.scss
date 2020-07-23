@@ -7,8 +7,11 @@
     @extend %container;
     padding: 60px 15px;
     text-align: center;
-    // display: flex;
-    // justify-content: space-between;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      text-align: start;
+    }
   }
   & b {
     display: block;
@@ -20,10 +23,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  // &__block1 {
-  // display: block;
-  // }
+  &__block1 {
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
+  }
   &__address {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      display: block;
+    }
     font-style: normal;
     margin-top: 20px;
   }
@@ -54,14 +62,28 @@
 .subscribe {
   padding-top: 12px;
   &__forma {
+    @media screen and (max-width: $tablet-max) {
+      flex-direction: column;
+    }
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   &__input {
-    margin-bottom: 20px;
-    width: 100%;
+    @media screen and (max-width: $mobile-max) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      width: 450px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-right: 12px;
+    }
+
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
