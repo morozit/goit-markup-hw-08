@@ -1,47 +1,57 @@
 .header {
   &__address {
+    display: block;
+  }
+
+  &__address-nav {
+    @media screen and (min-width: $tablet-min) {
+      display: block;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
       align-items: center;
     }
   }
-  &__address-nav {
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      //     margin-left: auto;
-      //     font-style: normal;
-    }
-  }
+
   &__address-item:not(:last-child) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $mobile-max) {
+      margin-bottom: 16px;
+    }
   }
-  %address-link {
-    display: block;
-    padding-bottom: 0;
 
-    font-weight: 400;
+  &__address-link--mail,
+  &__address-link--tel {
+    display: inline;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     text-decoration: none;
 
     color: $text-color;
     fill: $text-color;
     transition: color $timing-animation, fill $timing-animation;
-  }
-  &__address-link--mail {
-    @extend %address-link;
-    padding-top: 0px;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+    @media screen and (max-width: $mobile-max) {
+      font-size: 18px;
+      line-height: 1.16;
+    }
   }
   &__address-link--mail:hover,
-  &__address-link--mail:focus {
+  &__address-link--mail:focus,
+  &__address-link--tel:hover,
+  &__address-link--tel:focus {
     color: $accent-color;
-  }
-
-  &__address-link--tel {
-    @extend %address-link;
+    fill: $accent-color;
+    outline: transparent;
   }
 }

@@ -1,12 +1,6 @@
 .header {
   &__site-nav {
     display: block;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
   }
 
   &__site-nav {
@@ -25,19 +19,22 @@
       margin-right: auto;
       padding-bottom: 8px;
       margin-bottom: 52px;
-      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.16;
     }
     @media screen and (min-width: 768px) {
       display: block;
       padding-top: 32px;
       padding-bottom: 32px;
     }
-    color: $title-color;
-    transition: color $timing-animation;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    color: $title-color;
+    transition: color $timing-animation;
   }
   &__site-link::before {
     content: "";

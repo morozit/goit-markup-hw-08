@@ -4,7 +4,8 @@
   // max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  // background-color: rgba(252, 0, 0, 0.1);
+  outline: 1px solid $accent-color;
+
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
