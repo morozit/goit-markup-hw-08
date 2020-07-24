@@ -1,39 +1,87 @@
-.hero {
-  @media screen and (min-width: $mobile) {
-    width: 480px;
+// ! фонове зображення героя для мобыльних min + max
+@media only screen and (max-width: $mobile-max) {
+  .hero {
+    position: relative;
+    max-width: 480px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include webp-background($img: "hero-mobile-480-400");
   }
-  @media screen and (min-width: $tablet-min) {
-    width: 768px;
-    height: 400px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 1600px;
-    height: 600px;
-  }
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../images/hero/hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-.hero__container {
-  // @extend %container;
-  margin-left: auto;
-  margin-right: auto;
-  // width: $desktop;
-  @media screen and (min-width: $desktop) {
-    max-width: 1200px;
-    padding: 200px 60px;
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: $mobile-max) and (-webkit-min-device-pixel-ratio: 2) and (max-width: $mobile-max),
+  only screen and (max-width: $mobile-max) and (min--moz-device-pixel-ratio: 2) and (max-width: $mobile-max),
+  only screen and (max-width: $mobile-max) and (min-device-pixel-ratio: 2) and (max-width: $mobile-max),
+  only screen and (max-width: $mobile-max) and (min-resolution: 192dpi) and (max-width: $mobile-max),
+  only screen and (max-width: $mobile-max) and (min-resolution: 2dppx) and (max-width: $mobile-max) {
+  .hero {
+    @include webp-background($img: "hero-mobile-480-400@2x");
   }
+}
+// ! фонове зображення героя для планшетів min + max
+@media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .hero {
+    position: relative;
+    max-width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include webp-background($img: "hero-tablet-768-400");
+  }
+}
+@media only screen and (max-width: $tablet-max) and (-webkit-min-device-pixel-ratio: 2) and (max-width: $tablet-max),
+  only screen and (max-width: $tablet-max) and (min--moz-device-pixel-ratio: 2) and (max-width: $tablet-max),
+  only screen and (max-width: $tablet-max) and (min-device-pixel-ratio: 2) and (max-width: $tablet-max),
+  only screen and (max-width: $tablet-max) and (min-resolution: 192dpi) and (max-width: $tablet-max),
+  only screen and (max-width: $tablet-max) and (min-resolution: 2dppx) and (max-width: $tablet-max) {
+  .hero {
+    @include webp-background($img: "hero-tablet-768-400@2x");
+  }
+}
+// ! фонове зображення героя для моніторів min
+@media only screen and (min-width: $desktop) {
+  .hero {
+    position: relative;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include webp-background($img: "hero-desctop-1600-600");
+  }
+}
+@media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  only screen and (min-width: 1200px) and (min--moz-device-pixel-ratio: 2) and (min-width: 1200px),
+  only screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  only screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px),
+  only screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    @include webp-background($img: "hero-desctop-1600-600@2x");
+  }
+}
+
+// ! Контейнер для тайтла та кнопки
+.hero__container {
+  @extend %container;
+  // margin-left: auto;
+  // margin-right: auto;
+  // // width: $desktop;
+  @media screen and (min-width: $desktop) {
+    // max-width: 1200px;
+    padding: 200px 60px;
+  }
+
   display: block;
 
   padding: 118px 60px;
