@@ -40,9 +40,12 @@
 .team__social--link {
   @extend %social__link;
   fill: #afb1b8;
-  transition: background-color $timing-animation, fill $timing-animation;
+  transform: rotateZ(0deg);
+  transition: transform $timing-animation, background-color $timing-animation,
+    fill $timing-animation;
   &:hover,
   &:focus {
+    transform: rotateZ(360deg);
     background-color: $accent-color;
     fill: $primary-white;
     outline: transparent;
@@ -51,10 +54,12 @@
 .footer__social--link {
   @extend %social__link;
   fill: $primary-white;
+  transform: rotateZ(0deg);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $timing-animation;
+  transition: transform $timing-animation, background-color $timing-animation;
   &:hover,
   &:focus {
+    transform: rotateZ(360deg);
     background-color: $accent-color;
     outline: transparent;
   }
