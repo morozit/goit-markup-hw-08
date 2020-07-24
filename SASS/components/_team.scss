@@ -1,12 +1,12 @@
 .team {
   &__background {
     background-color: #f5f4fa;
-    @media screen and (max-width: $tablet-max) {
-      margin-left: auto;
-      margin-right: auto;
+    // @media screen and (max-width: $tablet-max) {
+    //   margin-left: auto;
+    //   margin-right: auto;
 
-      width: $tablet-min;
-    }
+    //   width: $tablet-min;
+    // }
   }
   &__container {
     @extend %container;
