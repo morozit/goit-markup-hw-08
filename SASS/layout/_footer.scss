@@ -3,10 +3,19 @@
   color: $primary-white;
   font-size: 14px;
   line-height: 1.14;
+  // TODO footer container
   &__container {
     @extend %container;
     padding: 60px 15px;
     text-align: center;
+    @media screen and (min-width: $tablet-min) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      justify-content: center;
+      align-items: flex-start;
+    }
     @media screen and (min-width: $desktop) {
       display: flex;
       justify-content: space-between;
@@ -24,6 +33,11 @@
     text-transform: uppercase;
   }
   &__block1 {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      flex-basis: 50%;
+      padding-left: 60px;
+      padding-right: 85px;
+    }
     @media screen and (min-width: $desktop) {
       display: block;
     }
@@ -60,6 +74,11 @@
 }
 
 .subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 100%;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
   padding-top: 12px;
   &__forma {
     @media screen and (max-width: $tablet-max) {

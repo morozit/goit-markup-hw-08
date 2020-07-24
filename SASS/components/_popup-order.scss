@@ -1,4 +1,4 @@
-// ! popup фон та вікно з кнопками
+// ! задній фон  модалки
 .backdrop {
   position: fixed;
   top: 0;
@@ -12,33 +12,31 @@
   transition: opacity $timing-animation;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .popup {
-  transform: translate(-50%, -50%) scale(0.5);
-}
-
+// ! popup
 .popup {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
 
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background: $primary-white;
   box-sizing: border-box;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   text-align: center;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -5%) scale(1);
   opacity: 1;
   transition: transform $timing-animation;
+
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+    height: 580px;
+  }
 }
 // TODO стиліазція і анімація кнопок в popup
 .close-popup {
@@ -118,7 +116,8 @@
   letter-spacing: 0.01em;
   color: $text-color;
 
-  transition: transform $timing-animation, top $timing-animation, left $timing-animation, color $timing-animation;
+  transition: transform $timing-animation, top $timing-animation,
+    left $timing-animation, color $timing-animation;
 }
 .form-field:focus + .label-name,
 .form-field:not(:placeholder-shown) + .label-name {
@@ -184,7 +183,8 @@
   letter-spacing: 0.01em;
   color: $text-color;
 
-  transition: transform $timing-animation, top $timing-animation, left $timing-animation, color $timing-animation;
+  transition: transform $timing-animation, top $timing-animation,
+    left $timing-animation, color $timing-animation;
 }
 .comment-field:focus + .comment-name,
 .comment-field:not(:placeholder-shown) + .comment-name {
@@ -226,7 +226,15 @@
 }
 
 .check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
   color: $text-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .check-text a {
   color: $accent-color;

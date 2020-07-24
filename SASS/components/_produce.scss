@@ -1,12 +1,17 @@
 .produce {
   &__container {
     @extend %container;
+
     padding-bottom: 94px;
     @media screen and (max-width: 1199px) {
       display: none;
     }
   }
   &__title {
+    @extend %h;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
   &__list {

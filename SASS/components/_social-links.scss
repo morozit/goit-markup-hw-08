@@ -3,6 +3,13 @@
   padding-right: 32px;
 }
 .social-footer__container {
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    flex-basis: 50%;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 80px;
+    padding-right: 73px;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;

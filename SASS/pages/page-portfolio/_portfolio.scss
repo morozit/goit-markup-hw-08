@@ -2,28 +2,57 @@
   @extend %container;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 // TODO: блок портфолио карточки
 
 .project {
-  // display: flex;
-  // flex-wrap: wrap;
-  // TODO: позиціювання карточок проектів в 3 колонки
-  // &__item:not(:nth-child(3n)) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    border: 1px solid #eeeeee;
+    border-radius: 0px 0px 4px 4px;
+    transition: box-shadow $timing-animation;
+  }
+  // ! ITEM mobile - table - desktop
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
-  // &__item {
-  //   display: block;
-  //   width: calc((100% - 60px) / 3);
-  //   margin-top: 30px;
-  //   border: 1px solid #eeeeee;
-  //   border-radius: 0px 0px 4px 4px;
-  //   transition: box-shadow $timing-animation;
+  // ! ITEM tablet
+  // &__item:not(:last-child) {
+  //   @media screen and (max-width: $mobile-max) {
+  //     margin-bottom: 30px;
+  //   }
   // }
+  &__item:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+  // ! ITEM desctop
+  &__item:not(:nth-child(3n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+  }
+
   // TODO: картка портфоліо
   &__card {
     display: block;
