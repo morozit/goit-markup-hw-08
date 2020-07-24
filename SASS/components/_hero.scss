@@ -74,11 +74,7 @@
 // ! Контейнер для тайтла та кнопки
 .hero__container {
   @extend %container;
-  // margin-left: auto;
-  // margin-right: auto;
-  // // width: $desktop;
   @media screen and (min-width: $desktop) {
-    // max-width: 1200px;
     padding: 200px 60px;
   }
 
