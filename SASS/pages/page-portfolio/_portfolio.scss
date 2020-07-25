@@ -47,6 +47,11 @@
       margin-right: 30px;
     }
   }
+  &__item:nth-child(n + 7) {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
+  }
   &__item {
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 2 * 30px) / 3);
