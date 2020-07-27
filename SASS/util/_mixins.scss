@@ -15,3 +15,28 @@
       url("../images/hero/#{$img}#{$type}");
   }
 }
+
+// ! адаптивний шрифт
+@mixin responsive-font($pcFontSize, $mobFontSize) {
+  $addSize: $pcFontSize - $mobFontSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media screen and (max-width: 767px) {
+    font-size: calc(
+      #{$mobFontSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$desktop})
+    );
+  }
+  @media screen and (min-width: 768px) {
+    font-size: calc(
+      #{$mobFontSize + px} + #{$addSize} * ((100vw - 320px) / #{$desktop})
+    );
+  }
+}
+// ! адаптивний шрифт без медіа
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
