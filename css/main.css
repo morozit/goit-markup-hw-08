@@ -1675,7 +1675,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: 0px;
-  padding: 63px 24px;
+  padding: 15% 24px 12% 24px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
