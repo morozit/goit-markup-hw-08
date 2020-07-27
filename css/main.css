@@ -1657,6 +1657,7 @@ img {
 }
 
 .project__card-img {
+  background-image: grey;
   display: block;
   width: 450px;
 }
