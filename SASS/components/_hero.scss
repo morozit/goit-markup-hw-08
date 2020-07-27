@@ -74,11 +74,25 @@
 // ! Контейнер для тайтла та кнопки
 .hero__container {
   @extend %container;
+  display: block;
+  @media screen and (max-width: 320px) {
+    padding: 75px 40px;
+  }
+  @media screen and (min-width: 321px) {
+    padding: 70px 50px 75px 50px;
+  }
+  @media screen and (min-width: 418px) {
+    padding: 90px 50px 90px 50px;
+  }
+  @media screen and (min-width: 457px) {
+    padding: 115px 50px 115px 50px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 118px 60px;
+  }
   @media screen and (min-width: $desktop) {
     padding: 200px 60px;
   }
-
-  display: block;
 
   padding: 118px 60px;
   text-align: center;

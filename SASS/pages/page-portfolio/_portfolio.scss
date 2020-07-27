@@ -66,6 +66,8 @@
 
     padding-bottom: 20px;
     background-color: $primary-white;
+
+    outline: none;
   }
   &__card-behind {
     position: relative;
@@ -119,8 +121,13 @@
     color: $text-color;
   }
   // TODO: hover & focus to project card
-  &__item:hover &__card-description,
-  &__item:focus &__card-description {
+  // &__item:hover &__card-description,
+  // &__item:focus &__card-description {
+  //   transform: translateY(0);
+  //   opacity: 1;
+  // }
+  &__card:hover &__card-description,
+  &__card:focus &__card-description {
     transform: translateY(0);
     opacity: 1;
   }
@@ -130,3 +137,5 @@
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
 }
+
+// ! попробувати дати tabindex або ховер поміняти з ЛІ на силку
