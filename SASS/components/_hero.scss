@@ -72,12 +72,17 @@
 
 // ! Контейнер для тайтла та кнопки
 .hero__container {
-  @extend %container;
   position: relative;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .hero__title {
   @extend %h;

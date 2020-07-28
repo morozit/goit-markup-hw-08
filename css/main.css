@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.header__container, .footer__container, .hero__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
+.header__container, .footer__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -8,20 +8,20 @@
 }
 
 @media screen and (min-width: 480px) {
-  .header__container, .footer__container, .hero__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
-    max-width: 480px;
+  .header__container, .footer__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header__container, .footer__container, .hero__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
-    max-width: 768px;
+  .header__container, .footer__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__container, .footer__container, .hero__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
-    max-width: 1200px;
+  .header__container, .footer__container, .feature__container, .produce__container, .team__container, .client__container, .portfolio__container {
+    width: 1200px;
   }
 }
 
@@ -790,6 +790,10 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero__title {
