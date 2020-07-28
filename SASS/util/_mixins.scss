@@ -32,7 +32,7 @@
   }
 }
 // ! адаптивний шрифт без медіа
-$maxWidth: 1200;
+$maxWidth: 370;
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
