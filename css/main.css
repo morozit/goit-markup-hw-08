@@ -785,7 +785,6 @@ img {
 
 .hero__container {
   position: relative;
-  display: block;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -797,7 +796,6 @@ img {
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
-  text-align: center;
   color: #ffffff;
   margin-bottom: 30px;
   text-transform: uppercase;
