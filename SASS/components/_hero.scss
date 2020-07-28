@@ -75,19 +75,22 @@
 .hero__container {
   @extend %container;
   display: block;
-  @media screen and (max-width: 320px) {
-    padding: 75px 40px;
-  }
-  @media screen and (min-width: 321px) {
-    padding: 70px 50px 75px 50px;
-  }
-  @media screen and (min-width: 418px) {
-    padding: 90px 50px 90px 50px;
-  }
-  @media screen and (min-width: 457px) {
-    padding: 115px 50px 115px 50px;
-  }
-  @media screen and (min-width: 480px) {
+  // @media screen and (max-width: 320px) {
+  //   padding: 75px 40px;
+  // }
+  // @media screen and (min-width: 321px) {
+  //   padding: 70px 50px 75px 50px;
+  // }
+  // @media screen and (min-width: 418px) {
+  //   padding: 90px 50px 90px 50px;
+  // }
+  // @media screen and (min-width: 457px) {
+  //   padding: 115px 50px 115px 50px;
+  // }
+  // @media screen and (min-width: 480px) {
+  //   padding: 118px 60px;
+  // }
+  @media screen and (min-width: $tablet-max) {
     padding: 118px 60px;
   }
   @media screen and (min-width: $desktop) {
@@ -106,7 +109,10 @@
   color: $primary-white;
   padding-bottom: 30px;
   text-transform: uppercase;
-  line-height: 1.36;
+  @media screen and (max-width: 320px) {
+    font-size: 18px;
+    line-height: 1.36;
+  }
   @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
