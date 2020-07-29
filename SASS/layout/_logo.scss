@@ -19,7 +19,10 @@
   }
   &__studio-black {
     color: #000000;
-    @media screen and (min-width: $tablet-min) and (min-width: $tablet-max) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 81px;
+    }
+    @media screen and (min-width: $desktop) {
       margin-right: 85px;
     }
   }
