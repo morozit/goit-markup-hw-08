@@ -2,7 +2,8 @@
 @media only screen and (max-width: $mobile-max) {
   .hero {
     position: relative;
-    max-width: 480px;
+    // max-width: 480px;
+    max-width: 767px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -26,7 +27,8 @@
 @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
   .hero {
     position: relative;
-    max-width: 768px;
+    // max-width: 768px;
+    max-width: 1199px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
